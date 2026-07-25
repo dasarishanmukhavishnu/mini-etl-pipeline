@@ -1,0 +1,13 @@
+pipeline:
+  name: 'Order Processing ETL Pipeline'
+  version: '1.0.0'
+  reader_type: 'csv'
+
+paths:
+  raw_data: 'data/raw/messy_order.csv'
+  clean_data: 'data/cleaned/clean_order.csv'
+  invalid_data: 'data/invalid/invalid_order.csv'
+  log_file: 'logs/pipeline.log'
+
+logging:
+  level: 'INFO'
