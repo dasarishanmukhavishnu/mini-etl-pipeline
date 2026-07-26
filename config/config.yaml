@@ -4,8 +4,8 @@ pipeline:
   reader_type: 'csv'
 
 paths:
-  raw_data: 'data/raw/messy_order.csv'
-  clean_data: 'data/cleaned/clean_order.csv'
+  raw_data: 'data/raw/messy_orders.csv'
+  clean_data: 'data/cleaned/clean_orders.csv'
   invalid_data: 'data/invalid/invalid_order.csv'
   log_file: 'logs/pipeline.log'
 

@@ -1,6 +1,21 @@
-.env
-logs/
-data/raw/
+# Python
 __pycache__/
-*.pyc 
+*.pyc
+
+# Virtual Environment
+venv/
+.venv/
+
+# Logs
+logs/*.log
+.env
+# Output Data
+data/cleaned/*.csv
+data/invalid/*.csv
+
+# IDE
+.vscode/
+.idea/
 __init__.py
+# OS
+.DS_Store

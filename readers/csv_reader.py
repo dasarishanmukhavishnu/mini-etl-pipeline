@@ -2,7 +2,7 @@ import csv
 import logging
 from readers.base_reader import BaseReader
 from models.order import Order
-from exceptions import custom_exceptions
+from exceptions.custom_exceptions import FileReadError
 
 
 class CSVReader(BaseReader):
@@ -28,7 +28,7 @@ class CSVReader(BaseReader):
                         signup_date=row['signup_date'],
                         order_amount = row['order_amount'],
                         payment_method=row['payment_method'],
-                        notes=row.get(notes)
+                        notes=row.get('notes')
                     )
 
                     orders.append(order)
